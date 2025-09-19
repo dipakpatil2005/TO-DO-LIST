@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">Menu</div>
+        <div class="menu-item" id="menuAllLists">All Lists</div>
+        <div class="menu-item" id="menuSettings">Settings</div>
+    </div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-main">
+                <div class="header-left">
+                    <button id="menuBtn" class="header-menu-btn">☰</button>
+                    <h1>All Lists</h1>
+                    <span id="todayCount" class="task-badge">0</span>
+                </div>
+                <button id="addBtn">+</button>
+            </div>
+            <div class="header-select">
+                <button class="back-btn">&larr;</button>
+                <span class="task-count">0</span>
+                <div class="action-buttons">
+                    <button class="select-all-btn">✓</button>
+                    <button class="share-btn">⤢</button>
+                    <button class="delete-selected-btn">⌫</button>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div id="taskForm" style="display: none;">
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="What is to be done?">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="deadlineInput" style="font-size:0.9em;">Due date</label>
+                            <input type="datetime-local" id="deadlineInput">
+                        </div>
+                        <div class="form-item">
+                            <label for="listSelect" style="font-size:0.9em;">Add to List</label>
+                            <select id="listSelect">
+                                <option value="Personal">Personal</option>
+                                <option value="Work">Work</option>
+                                <option value="Shopping">Shopping</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="addTaskBtn">Add Task</button>
+                </div>
+            </div>
+            <div id="taskListView">
+                <div id="overdueTasks" class="task-section">
+                    <div class="section-header overdue">Overdue</div>
+                    <ul class="task-list"></ul>
+                </div>
+                <div id="todayTasks" class="task-section">
+                    <div class="section-header">Today</div>
+                    <ul class="task-list"></ul>
+                </div>
+                <div id="tomorrowTasks" class="task-section">
+                    <div class="section-header">Tomorrow</div>
+                    <ul class="task-list"></ul>
+                </div>
+                <div id="thisWeekTasks" class="task-section">
+                    <div class="section-header">This Week</div>
+                    <ul class="task-list"></ul>
+                </div>
+                <div id="laterTasks" class="task-section">
+                    <div class="section-header">Later</div>
+                    <ul class="task-list"></ul>
+                </div>
+                <div id="nothingTodo" style="text-align: center; color: #7f8c8d; margin-top: 50px;">
+                    <p style="font-size: 2em;">🌴</p>
+                    <p>Nothing to do</p>
+                </div>
+            </div>
+            <div id="settingsView" style="display: none; padding-top: 20px;">
+                <div class="input-container">
+                    <label for="sortSelect">Sort Tasks by:</label>
+                    <select id="sortSelect">
+                        <option value="due-date">Due Date</option>
+                        <option value="alphabetical">Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notification Popup UI -->
+    <div class="notification-popup" id="notificationPopup">
+        <button class="close-btn">&times;</button>
+        <h3>Task Deadline Approaching!</h3>
+        <p id="notificationText"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
