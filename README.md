@@ -1,26 +1,35 @@
 # TO-DO-LIST
 his is a modern, responsive, and feature-rich To-Do web application designed to help you organize your tasks efficiently. Built using vanilla HTML, CSS, and JavaScript, this app provides a clean, mobile-first user interface with intuitive features and subtle animations for an enhanced user experience.
 
-Key Features
-App-like UI: The interface is designed to mimic a native mobile application, featuring a prominent top bar, a sliding side menu, and a scrollable main content area.
+1. Key Features
 
-Persistent Storage: All tasks are automatically saved to your browser's localStorage. Your to-do list will remain exactly as you left it, even if you close the browser tab.
+2. App-like UI: 
+The interface is designed to mimic a native mobile application, featuring a prominent top bar, a sliding side menu, and a scrollable main content area.
 
-Dynamic Task Organization: Tasks are automatically sorted and grouped into smart categories to help you prioritize your day:
+3. Persistent Storage:
+All tasks are automatically saved to your browser's localStorage. Your to-do list will remain exactly as you left it, even if you close the browser tab.
 
-Overdue: Tasks with a past deadline are highlighted for immediate attention.
+4. Dynamic Task Organization: 
+Tasks are automatically sorted and grouped into smart categories to help you prioritize your day:
 
+5. Overdue: 
+Tasks with a past deadline are highlighted for immediate attention.
 Today, Tomorrow, This Week: Tasks are dynamically sorted based on their upcoming deadlines.
 
-Later: Tasks with no set deadline or a long-term deadline are placed in a separate category.
+6.Later: 
+Tasks with no set deadline or a long-term deadline are placed in a separate category.
 
-Customizable Tasks: Users can add tasks with specific details:
+7. Customizable Tasks:
+Users can add tasks with specific details:
 
-Task Description: A simple text field for entering the task.
+9. Task Description: 
+A simple text field for entering the task.
 
-Deadline: A date and time picker to set a precise deadline for each task.
+10. Deadline:
+A date and time picker to set a precise deadline for each task.
 
-Lists: Tasks can be assigned to different lists (e.g., Personal, Work, Shopping) to keep your to-dos separate and organized.
+11. Lists: 
+Tasks can be assigned to different lists (e.g., Personal, Work, Shopping) to keep your to-dos separate and organized.
 
 Interactive Task Management:
 
@@ -33,8 +42,11 @@ Deadline Notifications: The app includes a custom, non-intrusive pop-up notifica
 Settings Menu: A basic settings page is included in the side menu, allowing users to sort tasks by due date or alphabetically.
 
 Technology Stack
-HTML: Provides the semantic structure of the web application.
+HTML:
+Provides the semantic structure of the web application.
 
-CSS: Styles the application with a clean, professional, dark blue theme, custom animations, and a responsive layout for all screen sizes.
+CSS: 
+Styles the application with a clean, professional, dark blue theme, custom animations, and a responsive layout for all screen sizes.
 
-JavaScript: Handles all the application logic, including DOM manipulation, event listeners, data persistence (localStorage), task sorting, and the deadline notification system.
+JavaScript: 
+Handles all the application logic, including DOM manipulation, event listeners, data persistence (localStorage), task sorting, and the deadline notification system.
